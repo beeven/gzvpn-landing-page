@@ -1,0 +1,39 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">
+    <img src="assets/img/logo.svg" width="30" height="30" alt="">
+    广州海关移动办公</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item mr-2">
+        <a class="nav-link" routerLink="/home"  routerLinkActive="active">首页</a>
+      </li>
+      <li class="nav-item mr-2">
+        <a class="nav-link" routerLink="/videos"  routerLinkActive="active">视频教程</a>
+      </li>
+      <li class="nav-item mr-2">
+       <a class="nav-link" routerLink="/tutorial" routerLinkActive="active">图文指南</a>
+      </li>
+      <li class="nav-item mr-2">
+        <a class="nav-link" routerLink="/faq" routerLinkActive="active">移动办公知识库</a>
+      </li>
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">搜索</button>
+    </form> -->
+  </div>
+</nav>
+<div class="flex-grow-1">
+    <router-outlet></router-outlet>
+  
+</div>
+
+
+<footer class="bg-light p-2 text-center text-secondary">
+  <div>广州海关 办公室 科技处</div>
+  <div>技术热线 81103814</div>
+</footer>

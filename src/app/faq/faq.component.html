@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <h3 class="col-sm-10 col-md-8">VPN接入类问题</h3>
+    </div>
+    <div class="row justify-content-sm-center">
+        <accordion class="col-sm-10 col-md-8 accordion" [isAnimated]="true" [closeOthers]="true">
+            <accordion-group *ngFor="let item of faqs"
+             heading="{{item.question}}">
+               <p [innerHTML]="item.answer"></p>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
